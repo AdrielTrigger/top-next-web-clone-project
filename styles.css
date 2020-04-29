@@ -139,8 +139,15 @@ nav {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
+.content1, .content2, .content3 {
+    background-image: url(images/breaking-news.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 .content1 {
-    border: 2px solid blue;
     grid-area: 1 / 1 / span 2 / span 2;
 }
 
@@ -152,7 +159,6 @@ nav {
 }
 
 .content2 {
-    border: 2px solid rgb(202, 202, 1);
     grid-area: 1 / 3 / 2 / 4;
 }
 
@@ -164,7 +170,6 @@ nav {
 }
 
 .content3 {
-    border: 2px solid green;
     grid-area: 2 / 3 / 3 / 4;
 }
 
@@ -206,7 +211,6 @@ nav {
 
 .latest {
     height: 550px;
-    border: 2px solid rgb(190, 0, 190);
 }
 
 .news-grid {
@@ -217,12 +221,11 @@ nav {
     padding: 10px;
 }
 
-.news-grid-item {
-    border: 2px solid red;
-}
-
 .image {
-    border: 2px solid pink;
+    background-image: url(images/some-news.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 70%;
 }
@@ -264,12 +267,10 @@ nav {
 
 .funding {
     height: 300px;
-    border: 2px solid green;
 }
 
 .funding header {
     width: 100%;
-    border: 2px solid rgb(118, 189, 12);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,7 +286,6 @@ nav {
 }
 
 .rounds {
-    border: 2px solid rgb(9, 77, 9);
     height: 90%;
     width: 100%;
     display: flex;
@@ -294,19 +294,16 @@ nav {
 }
 
 .round {
-    border: 2px solid rgb(21, 168, 21);
     height: 90%;
     width: 24%;
 }
 
 .name-and-value, .name, .value, .additional-info {
     width: 100%;
-    border: 2px solid blue;
 }
 
 .name-and-value, .name, .value, .additional-info {
     height: 50%;
-    border: 2px solid teal;
 }
 
 .name {
@@ -352,6 +349,10 @@ nav {
         height: 800px;
     }
 
+    .funding header {
+        display: inline-block;
+    }
+
     .rounds {
         flex-direction: column;
         justify-content: center;
@@ -367,19 +368,13 @@ nav {
 /* MULTI-SUBJECT GRID */
 
 .multi {
-    border: 2px solid rgb(185, 185, 14);
     display: grid;
     grid-template: repeat(3, 750px) / repeat(3, 1fr);
     grid-gap: 5px;
 }
 
-.content {
-    border: 2px solid gold;
-}
-
 .subject, .opening, .popular, .news-list {
     width: 100%;
-    border: 2px solid rgb(160, 138, 15);
 }
 
 .opening {
@@ -397,7 +392,6 @@ nav {
 }
 
 .latest-news, .latest-image {
-    border: 2px solid rgb(88, 78, 18);
     height: 100%;
 }
 
@@ -422,7 +416,118 @@ nav {
 .news-list li {
     margin: 0 0 15px 10px;
     line-height: 30px;
-    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.insights {
+    background-image: url(images/insights.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.insights2 {
+    background-image: url(images/insights2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.launch {
+    background-image: url(images/launch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.launch2 {
+    background-image: url(images/launch2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.distract {
+    background-image: url(images/distract.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.distract2 {
+    background-image: url(images/distract2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apps {
+    background-image: url(images/apps.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apps2 {
+    background-image: url(images/apps2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gear {
+    background-image: url(images/gear.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gear2 {
+    background-image: url(images/gear2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech {
+    background-image: url(images/tech.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech2 {
+    background-image: url(images/tech2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creative {
+    background-image: url(images/creative.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creative2 {
+    background-image: url(images/creative.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.podium {
+    background-image: url(images/podium2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.podium2 {
+    background-image: url(images/podium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1023px) {
@@ -442,12 +547,10 @@ nav {
 /* DEALS */
 
 .deals {
-    border: 2px solid rgb(165, 165, 165);
-    height: 800px;
+    height: 700px;
 }
 
 .deal-grid {
-    border: 2px solid rgb(37, 37, 37);
     height: 90%;
     width: 100%;
     display: grid;
@@ -455,8 +558,37 @@ nav {
     grid-gap: 10px;
 }
 
-.deal-grid-item {
-    border: 2px solid rgb(95, 95, 95);
+.image1, .image2, .image3, .image4 {
+    width: 100%;
+    height: 70%;
+}
+
+.image1 {
+    background-image: url(images/product1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url(images/product2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url(images/product3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url(images/product4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1023px) {
@@ -477,6 +609,11 @@ nav {
     .deal-grid-item {
         display: flex;
         justify-content: stretch;
+    }
+
+    .image1, .image2, .image3, .image4 {
+        width: 120px;
+        height: 100%;
     }
 }
 
